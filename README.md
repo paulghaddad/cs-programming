@@ -1,5 +1,6 @@
-# cs-programming
-My work for the teachyourselfcs Programming Module
+# Computer Science: Programming
+
+My work for the [teachyourselfcs](https://teachyourselfcs.com) Programming Module.
 
 ## Week 1: Functional Programming
 
