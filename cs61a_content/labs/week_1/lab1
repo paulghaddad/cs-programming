@@ -1,0 +1,26 @@
+okay
+STk> (load "pigl.scm")
+okay
+STk> (load "paul")
+*** Error:
+    load: cannot open file: "paul"
+Current eval stack:
+__________________
+  0    (load "paul")
+STk> (pigl 'scheme)
+emeschay
+STk> (pigl 'paul)
+aulpay
+STk> (trace pigl)
+okay
+STk> (pigl 'scheme)
+.. -> pigl with wd = scheme
+.... -> pigl with wd = chemes
+...... -> pigl with wd = hemesc
+........ -> pigl with wd = emesch
+........ <- pigl returns emeschay
+...... <- pigl returns emeschay
+.... <- pigl returns emeschay
+.. <- pigl returns emeschay
+emeschay
+STk> (transcript-off)
