@@ -21,4 +21,4 @@
 (define (switch-word wd)
   (cond ((or (equal? wd 'I) (equal? wd 'me)) (word 'you))
         ((equal? wd 'you) (word 'me))
-        (wd)))
+        (else wd)))
