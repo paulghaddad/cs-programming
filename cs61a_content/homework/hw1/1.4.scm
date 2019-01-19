@@ -6,6 +6,6 @@
 ;;; (ordered? '(1 4 3)) => #f
 
 (define (ordered? nums)
-  (if (or (empty? nums) (empty? (bf nums))
-    #t
+  (if (or (empty? nums) (empty? (bf nums)))
+    true
     (and (< (first nums) (first (bf nums))) (ordered? (bf nums)))))
