@@ -18,5 +18,11 @@ This week consists of section 1.1, with the following topics:
 
 This week consists of section 1.3, with the following topics:
 
-* Functions as data, or objects, as opposed to the more familiar view of functions as processes
-* Using functions as arguments, allowing us to generalize procedures. These higher-order procedures can take in a number or function that specifies what varies in using the pattern, such as calculating the area of various shapes or summing a series.
+* Functions as data, or objects, as opposed to the more familiar view of functions as processes.
+* Higher-order procedures are procedures that take in procedures as arguments or return procedures.
+* Using functions as arguments, allowing us to generalize procedures. These higher-order procedures can take in a number or function that specifies what _varies_ in using the pattern, such as calculating the area of various shapes or summing a series.
+* Function vocabulary:
+  * Domain: What types of things does a function take as arguments?
+  * Range: What types of things does a function return?
+  * Real mathematicians say, "The function x maps to ax + b." This allows us to state the formal parameters to a function. See the work of Alonzo Church.
+* Unnamed functions (lambdas): extends Alonzo's work above. `(lambda (x) (x + 2))` -> The function `x` maps to `x + 2`.
