@@ -41,12 +41,9 @@
 ;;; Your task is to find a way to express the fact procedure in a Scheme without
 ;;; any way to define global names.
 
-((lambda (fact n)
-   (fact fact n))
- (lambda (fn n) (
-                 (if (= n 0)
-                   1
-                 (* n (fn fn (- n 1))))))
- 5)
-
-;  (lambda (fn n) (* n (fn fn (- n 1)))) 5)
+((lambda (fact)
+   (display (fact fact 5)))
+ (lambda (fn n)
+          (if (= n 0)
+            1
+          (* n (fn fn (- n 1))))))
