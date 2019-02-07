@@ -26,6 +26,11 @@ This week consists of section 1.3, with the following topics:
   * Range: What types of things does a function return?
   * Real mathematicians say, "The function x maps to ax + b." This allows us to state the formal parameters to a function. See the work of Alonzo Church.
 * Unnamed functions (lambdas): extends Alonzo's work above. `(lambda (x) (x + 2))` -> The function `x` maps to `x + 2`.
-* First-class data types
+* First-class data types:
+  * the value of a variable (ie, it is named)
+  * an argument to a function
+  * the return value from a function
+  * a member of an aggregate
+  * can be unnamed (ie anonymous)
 * Functions as return values
 * Using `let`
