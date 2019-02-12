@@ -33,4 +33,5 @@ This week consists of section 1.3, with the following topics:
   * a member of an aggregate
   * can be unnamed (ie anonymous)
 * Functions as return values
+  * For example, the derivative of a function is itself a function.
 * Using `let`
