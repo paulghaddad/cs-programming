@@ -20,7 +20,7 @@ This week consists of section 1.3, with the following topics:
 
 * Functions as data, or objects, as opposed to the more familiar view of functions as processes.
 * Higher-order procedures are procedures that take in procedures as arguments or return procedures.
-* Using functions as arguments, allowing us to generalize procedures. These higher-order procedures can take in a number or function that specifies what _varies_ in using the pattern, such as calculating the area of various shapes or summing a series.
+* Using functions as arguments, allowing us to generalize procedures, ir _ideas_. These higher-order procedures can take in a number or function that specifies what _varies_ in using the pattern, such as calculating the area of various shapes or summing a series.
 * Function vocabulary:
   * Domain: What types of things does a function take as arguments?
   * Range: What types of things does a function return?
@@ -34,4 +34,5 @@ This week consists of section 1.3, with the following topics:
   * can be unnamed (ie anonymous)
 * Functions as return values
   * For example, the derivative of a function is itself a function.
+  * It transforms the input to another function.
 * Using `let`
