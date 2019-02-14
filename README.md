@@ -36,3 +36,22 @@ This week consists of section 1.3, with the following topics:
   * For example, the derivative of a function is itself a function.
   * It transforms the input to another function.
 * Using `let`
+
+## Week 3: Procedures and the Process They Generate
+
+This week consists of Section 1.2, with the following topics:
+
+* Linear Recursion and Iteration
+  * Recursion: expansion then contraction
+  * Iteration: a process whose state can be summarized by a fixed number of _state variables_
+  * Recursive process vs. recursive procedure: a recursive procedure means the procedure refers to itself; a recursive process refers to how the process evolves, not how the procedure is defined.
+  * You can have a recursive procedure than has an iterative process
+  * Tail recursive: a language implementation where a recursive procedure that generates an iterative process _properly_ executes in constant space. Many languages don't have this feature and recursive procedures with iterative processes still consumes memory linearly with the number of procedure calls.
+* Tree Recursion
+  * Differences in growth of time (steps) and space between tree recursion and linear iteration, illustrated with the Fibonacci sequence.
+  * The use of memoization to transform tree recursion processes from an exponential number of steps into process whose space and time requirements grow linearly with the input.
+* Orders of Growth
+  * If `n` measures the size of the problem (which can be various properties) and `R(n)` is the amount of resources the process requires, then `R(n)` has order of growth `theta(f(n))` and is sandwiched between:
+  ```
+  k1f(n) <= R(n) <= k2f(n)
+  ```
