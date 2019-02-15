@@ -55,3 +55,5 @@ This week consists of Section 1.2, with the following topics:
   ```
   k1f(n) <= R(n) <= k2f(n)
   ```
+  * Example algorithms with time and space growth of theta(n) and theta(n); theta(n) and theta(1); theta(log n) and theta(log n)
+  * Probabilistic algorithms
