@@ -41,6 +41,9 @@ This week consists of section 1.3, with the following topics:
 
 This week consists of Section 1.2, with the following topics:
 
+* Process Evolution
+  * A procedure is a pattern for the _local evolution_ of a computational process, specifying how each stage of the process is built upon the previous state.
+  * This section concerns overall, _global_ behaviors or _shapes_ of a process whose local evolution has been specified by a procedure.
 * Linear Recursion and Iteration
   * Recursion: expansion then contraction
   * Iteration: a process whose state can be summarized by a fixed number of _state variables_
