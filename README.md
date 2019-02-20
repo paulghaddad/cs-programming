@@ -60,3 +60,7 @@ This week consists of Section 1.2, with the following topics:
   ```
   * Example algorithms with time and space growth of theta(n) and theta(n); theta(n) and theta(1); theta(log n) and theta(log n)
   * Probabilistic algorithms
+* Iterative Processes
+  * Space Efficiency
+  * The difference between a _linear recursive process_ and an _iterative process_.
+  * A procedure can be written recursively, but generate either a linear recursive process or an iterative process. The essential difference is whether the procedure creates unfinished tasks that must be stored in memory until completion. Basically, are we doing the desired computation on the way in (iterative process) or on the way back up (linear recursive process)?
