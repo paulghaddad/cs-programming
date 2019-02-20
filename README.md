@@ -63,4 +63,6 @@ This week consists of Section 1.2, with the following topics:
 * Iterative Processes
   * Space Efficiency
   * The difference between a _linear recursive process_ and an _iterative process_.
-  * A procedure can be written recursively, but generate either a linear recursive process or an iterative process. The essential difference is whether the procedure creates unfinished tasks that must be stored in memory until completion. Basically, are we doing the desired computation on the way in (iterative process) or on the way back up (linear recursive process)?
+  * A procedure can be written recursively, but generate either a linear recursive process or an iterative process. The essential difference is whether the procedure creates unfinished tasks that must be stored in memory until completion. Basically, are we doing the desired computation on the way in (iterative process), where we don't have to remember intermediate answers and can immediately return the result when we hit the base case, or on the way back up (linear recursive process), where we must remember intermediate answers?
+  * A language that is able to detect the differences in these process types and execute the procedure in constant space  has the capability of _tail recursion_. Thus, you can use recursive constructs to achieve iterative processes without using `for`, `while`, or other iterative syntax.
+  * It is essential to think hard about how a solution to a problem grows and how to achieve more efficient growth. 
