@@ -45,3 +45,34 @@
 
 (count-change 10) ; 4
 (count-change 100) ; 292
+
+;;; Exponentiation - linear recursive process
+
+(define (expt b n)
+  (if (= n 0)
+    1
+    (* b (exp b (- n 1)))))
+
+;;; Exponentiation - linear iterative process
+
+(define (expt b n)
+  (expt-iter b n 1))
+
+(define (expt-iter b counter product)
+  (if (= counter 0)
+    product
+    (expt-iter b
+               (- counter 1)
+               (* b product))))
+
+;;; Exponentiation - Successive Squaring
+
+(define (even? n)
+  (= (remainder n 2) 0))
+
+(define (fast-expt b n)
+  (cond ((= n 0) 1)
+        ((even? n) (square (fast-expt b (/ n 2))))
+        (else (* b (fast-expt b (- n 1))))))
+
+(fast-expt 2 16) ; 65536
