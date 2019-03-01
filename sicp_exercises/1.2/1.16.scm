@@ -29,13 +29,6 @@
   (expt-log-iter b n 1))
 
 (define (expt-log-iter b n a)
-  (newline)
-  (display n)
-  (newline)
-  (display b)
-  ; (newline)
-  ; (display a)
-
   (cond ((= n 0) a)
       ((even? n) (expt-log-iter (square b) (/ n 2) a))
       (else (expt-log-iter b (- n 1) (* a b)))))
