@@ -76,3 +76,12 @@
         (else (* b (fast-expt b (- n 1))))))
 
 (fast-expt 2 16) ; 65536
+
+;;; Euclid's Algorithm
+
+(define (gcd a b)
+  (if (= b 0)
+    a
+    (gcd b (remainder a b))))
+
+(gcd 16 28)
