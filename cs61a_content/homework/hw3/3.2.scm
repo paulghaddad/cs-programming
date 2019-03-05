@@ -15,17 +15,17 @@
       (next-perf next-num))))
 
 (define (perfect-number? n)
-  (= (sum-of-factors n) n)
-)
+  (= (sum-of-factors n) n))
 
 (define (divisor? n divisor)
   (= (remainder n divisor) 0))
 
 (define (sum-of-factors n)
   (define (sum-factors n d sum)
-    (cond ((= d 0) sum)
-          ((divisor? n d) (sum-factors n (- d 1) (+ sum d)))
-          (else (sum-factors n (- d 1) sum))))
+    (cond
+      ((= d 0) sum)
+      ((divisor? n d) (sum-factors n (- d 1) (+ sum d)))
+      (else (sum-factors n (- d 1) sum))))
 
   (sum-factors n (- n 1) 0))
 
