@@ -5,7 +5,6 @@
     (if (filter a)
       (term a)
       null-value))
-  (current-term)
 
   (if (> a b)
     null-value
@@ -42,3 +41,15 @@
 ;;; Part b: The product of all the positive integers less than n that are
 ;;; relatively prime to n
 
+(define (gcd a b)
+  (if (= b 0)
+      a
+      (gcd b (remainder a b))))
+
+(define (relatively-prime-product n)
+  (define (relatively-prime? i)
+    (= (gcd i n) 1))
+
+  (filtered-accumulate * 1 identity 1 inc (- n 1) relatively-prime?))
+
+(relatively-prime-product 10) ; 189
