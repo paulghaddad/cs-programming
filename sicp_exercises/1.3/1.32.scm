@@ -28,3 +28,16 @@
   (accumulate * 1 term a next b))
 
 (product identity 1 inc 5) ; 120
+
+;;; Rewrite accumulate using an iterative process
+
+(define (accumulate-iter combiner null-value term a next b)
+  (define (iter a result)
+    (if (> a b)
+      result
+      (iter (next a) (combiner result (term a)))))
+
+  (iter a null-value))
+
+(accumulate-iter + 0 identity 0 inc 10) ; 55
+(accumulate-iter * 1 identity 1 inc 5) ; 120
