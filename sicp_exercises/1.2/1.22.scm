@@ -1,4 +1,4 @@
-;;; 1.22 scm
+;;; Ex. 1.22
 
 ;;; Use the smallest-divisor procedure to find the smallest divisor of each of
 ;;; the following numbers: 199, 1999, 19999.
@@ -52,10 +52,10 @@
     (search-for-primes (+ a 2) primes-found)))
 
 
-; (search-for-primes 1000 0)
-; (search-for-primes 10000 0)
-; (search-for-primes 100000 0)
-; (search-for-primes 1000000 0)
+; (search-for-primes 1000 0) ; 1009, 1013, 1019
+; (search-for-primes 10000 0) ; 10007 10009 10037
+; (search-for-primes 100000 0) ; 100003 100019 100043
+; (search-for-primes 1000000 0) ; 1000003 1000033 1000037
 
 ;;; Unfortunately the times reported are so near 0 that I can't determine the
 ;;; difference in runtimes between the four runs. Let's bump up the magnitudes

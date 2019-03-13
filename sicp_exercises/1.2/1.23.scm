@@ -1,4 +1,4 @@
-;;; 1.23
+;;; Ex. 1.23
 
 ;;; The smallest-divisor procedure shown at the start of this section does lots
 ;;; of needless testing: After it checks to see if the number is divisible by 2
@@ -62,10 +62,10 @@
     (search-for-primes (+ a 2) primes-found)))
 
 
-; (search-for-primes 1000000000 0) ; ~.06 => ~.04 ; reduction: 33%
+(search-for-primes 1000000000 0) ; ~.06 => ~.04 ; reduction: 33%
 ; (search-for-primes 10000000000 0) ; ~.19 => ~.12 ; reduction: 36%; Growth Factor: 3.0
 ; (search-for-primes 100000000000 0) ; ~..6 => ~.37; reduction: 38%; Growth Factor: 3.08
-(search-for-primes 1000000000000 0) ; ~1.84 =>  ~1.15; reduction: 38%; Growth Factor: 3.10
+; (search-for-primes 1000000000000 0) ; ~1.84 =>  ~1.15; reduction: 38%; Growth Factor: 3.10
 
 ;;; While this implementation does indeed reduce the runtime, it doesn't reduce
 ;;; it by half as expected. The observed ratio reduction of the tests are
