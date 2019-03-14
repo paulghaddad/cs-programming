@@ -28,8 +28,7 @@
 
 (define (timed-prime-test n)
   (newline)
-  (display n)
-  (start-prime-test n (runtime)))
+  (display n) (start-prime-test n (runtime)))
 
 (define (start-prime-test n start-time)
   (cond ((fast-prime? n 100)
