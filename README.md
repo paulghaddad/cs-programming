@@ -48,8 +48,11 @@ This week consists of Section 1.2, with the following topics:
   * Recursion: expansion then contraction
   * Iteration: a process whose state can be summarized by a fixed number of _state variables_
   * Recursive process vs. recursive procedure: a recursive procedure means the procedure refers to itself; a recursive process refers to how the process evolves, not how the procedure is defined.
-  * You can have a recursive procedure than has an iterative process
-  * Tail recursive: a language implementation where a recursive procedure that generates an iterative process _properly_ executes in constant space. Many languages don't have this feature and recursive procedures with iterative processes still consumes memory linearly with the number of procedure calls.
+  * The difference between a _linear recursive process_ and an _iterative process_.
+    * A procedure can be written recursively, but generate either a linear recursive process or an iterative process. The essential difference is whether the procedure creates deferred tasks that must be stored in memory until completion (expansion followed by contraction), or whether the state of the program at any point in time can be summarized with a fixed number of _state variables_.. Basically, are we doing the desired computation on the way in (iterative process), where we don't have to remember deferred answers and can immediately return the result when we hit the base case, or on the way back up, expand and constract (linear recursive process), where we must remember deferred answers
+  * A language that is able to detect the differences in these process types and execute the procedure in constant space  has the capability of _tail recursion_. Thus, you can use recursive constructs to achieve iterative processes without using `for`, `while`, or other iterative syntax.
+  * It is essential to think hard about how a solution to a problem grows and how to achieve more efficient growth. 
+
 * Tree Recursion
   * Differences in growth of time (steps) and space between tree recursion and linear iteration, illustrated with the Fibonacci sequence.
   * The use of memoization to transform tree recursion processes from an exponential number of steps into process whose space and time requirements grow linearly with the input.
@@ -62,7 +65,4 @@ This week consists of Section 1.2, with the following topics:
   * Probabilistic algorithms
 * Iterative Processes
   * Space Efficiency
-  * The difference between a _linear recursive process_ and an _iterative process_.
-  * A procedure can be written recursively, but generate either a linear recursive process or an iterative process. The essential difference is whether the procedure creates deferred tasks that must be stored in memory until completion (expansion followed by contraction), or whether the state of the program at any point in time can be summarized with a fixed number of _state variables_.. Basically, are we doing the desired computation on the way in (iterative process), where we don't have to remember deferred answers and can immediately return the result when we hit the base case, or on the way back up, expand and constract (linear recursive process), where we must remember deferred answers?
-  * A language that is able to detect the differences in these process types and execute the procedure in constant space  has the capability of _tail recursion_. Thus, you can use recursive constructs to achieve iterative processes without using `for`, `while`, or other iterative syntax.
-  * It is essential to think hard about how a solution to a problem grows and how to achieve more efficient growth. 
+  
