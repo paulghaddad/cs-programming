@@ -49,7 +49,8 @@ This week consists of Section 1.2, with the following topics:
   * Iteration: a process whose state can be summarized by a fixed number of _state variables_
   * Recursive process vs. recursive procedure: a recursive procedure means the procedure refers to itself; a recursive process refers to how the process evolves, not how the procedure is defined.
   * The difference between a _linear recursive process_ and an _iterative process_.
-    * A procedure can be written recursively, but generate either a linear recursive process or an iterative process. The essential difference is whether the procedure creates deferred tasks that must be stored in memory until completion (expansion followed by contraction), or whether the state of the program at any point in time can be summarized with a fixed number of _state variables_.. Basically, are we doing the desired computation on the way in (iterative process), where we don't have to remember deferred answers and can immediately return the result when we hit the base case, or on the way back up, expand and constract (linear recursive process), where we must remember deferred answers
+    * A procedure can be written recursively, but generate either a linear recursive process or an iterative process. The essential difference is whether the procedure creates deferred tasks that must be stored in memory until completion (expansion followed by contraction), or whether the state of the program at any point in time can be summarized with a fixed number of _state variables_.. Basically, are we doing the desired computation on the way in (iterative process), where we don't have to remember deferred answers and can immediately return the result when we hit the base case, or on the way back up, expand and constract (linear recursive process), where we must remember deferred answers.
+    * An Iterative Processes will be more space efficient.
   * A language that is able to detect the differences in these process types and execute the procedure in constant space  has the capability of _tail recursion_. Thus, you can use recursive constructs to achieve iterative processes without using `for`, `while`, or other iterative syntax.
   * It is essential to think hard about how a solution to a problem grows and how to achieve more efficient growth. 
 
@@ -63,6 +64,3 @@ This week consists of Section 1.2, with the following topics:
   ```
   * Example algorithms with time and space growth of theta(n) and theta(n); theta(n) and theta(1); theta(log n) and theta(log n)
   * Probabilistic algorithms
-* Iterative Processes
-  * Space Efficiency
-  
