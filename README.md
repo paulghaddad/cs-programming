@@ -64,3 +64,21 @@ This week consists of Section 1.2, with the following topics:
   ```
   * Example algorithms with time and space growth of theta(n) and theta(n); theta(n) and theta(1); theta(log n) and theta(log n)
   * Probabilistic algorithms
+
+## Week 4: Data Abstraction and Sequences
+
+This week consists of SICP 2.1 - 2.2.1.
+
+* Data Abstraction
+  * Just like _procedural abstraction_, where the details of its implementation is suppressed and all that matters is its behavior, we have _data abstraction_. It enables us to isolate how a compound data object is used from the details of how it is constructed from more primitive data objects.
+  * Scheme has the compound structure _pair_, which is a compound data objects that contains two parts, is is a general-purpose building block to create all sorts of complext data structures. Data objects constructed from pairs are call _list-structured_ data.
+  
+* Abstraction Barriers:
+  * Isolate different "levels" of a system. At each level, the barrier separates the programs that use the data abstraction from the programs that implement the data abstraction.
+  * Procedures at each level are the interfaces that define the abstraction barriers and connect the different levels.
+  
+* Hierarchical Data
+  * In Lisp, we can create pairs whose elements are pairs, ad infinitum. This allows us to use pairs to represent all sorts of data, such as sequences and trees.
+  * Closure property: Not to be confused with the other definition of closure with closing over free variables. An operation for combining data objects satisfies this property if the results of combining things with that operation can themselves be combined with the same operation. For example: combining 1, 2, 3, and 4 using pairs results in a pair, which can be combined with the same operation.
+  * Representing sequences: pairs are the object used to represent sequences in Lisp. The `list` primitive provides an easier means to construct sequences instead of using nested `conses`.
+  * `map` is an extremely important construct because it's a common pattern and establishes a higher level of abstraction in dealing with lists.
