@@ -72,6 +72,7 @@ This week consists of SICP 2.1 - 2.2.1.
 * Data Abstraction
   * Just like _procedural abstraction_, where the details of its implementation is suppressed and all that matters is its behavior, we have _data abstraction_. It enables us to isolate how a compound data object is used from the details of how it is constructed from more primitive data objects.
   * Scheme has the compound structure _pair_, which is a compound data objects that contains two parts, is is a general-purpose building block to create all sorts of complext data structures. Data objects constructed from pairs are call _list-structured_ data.
+  * With data abstraction, we want to hide how the data is represented. What follows is the need for _constructors_ to create objects and _selectors_ to request different information from them.
   
 * Abstraction Barriers:
   * Isolate different "levels" of a system. At each level, the barrier separates the programs that use the data abstraction from the programs that implement the data abstraction.
